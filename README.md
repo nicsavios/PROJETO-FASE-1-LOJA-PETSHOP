@@ -9,4 +9,4 @@ O sistema possui:
     Página de serviços
     Página de contato
 
-O objetivo é apresentar categorias de produtos com imagem, descrição e valor, além dos serviços oferecidos pelo petshop.
+O objetivo é apresentar categorias de produtos com descrição e valor, além dos serviços oferecidos pelo petshop.
