@@ -1,12 +1,19 @@
-Projeto PetShop - Fundamentos de Sistemas Web
+PetShop Amigo Fiel
 
-Este projeto apresenta um site simples de um petshop desenvolvido apenas com HTML.
+Este é um projeto acadêmico desenvolvido para a disciplina Fundamentos de Sistemas Web. O objetivo foi criar um site simples e funcional para um petshop utilizando apenas HTML, sem o uso de CSS, JavaScript ou frameworks como Bootstrap — conforme solicitado na Fase 1 do trabalho.
+Sobre o site
 
-O sistema possui:
+O site é composto por quatro páginas, todas interligadas por um menu de navegação comum:
 
-    Página inicial
-    Página de produtos
-    Página de serviços
-    Página de contato
+    Home (index.html): Apresenta o petshop e dá uma visão geral das categorias de produtos disponíveis.
 
-O objetivo é apresentar categorias de produtos com descrição e valor, além dos serviços oferecidos pelo petshop.
+    Produtos (produtos.html): Exibe dois produtos de cada uma das três categorias (Rações, Brinquedos e Acessórios), com imagem, descrição e preço.
+
+    Serviços (servicos.html): Lista os serviços oferecidos, como Banho, Tosa e Consulta Veterinária. Cada serviço inclui descrição, valor e indicação se há opção de tele-busca.
+
+    Contato (contato.html): Traz informações básicas de contato do estabelecimento, como telefone, e-mail e endereço.
+
+
+Autor
+Nicolas Savio Macedo da Silva
+Este projeto faz parte da avaliação da disciplina Fundamentos de Sistemas Web.
