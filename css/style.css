@@ -4,6 +4,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 /* Cards com efeito hover */
@@ -23,11 +30,6 @@ h2, h3 {
     margin-bottom: 20px;
 }
 
-/* Footer fixo */
-footer {
-    margin-top: auto;
-}
-
 /* Estilo para mensagem temporal */
 #mensagemHorario {
     font-size: 1.2rem;
@@ -40,6 +42,12 @@ footer {
     object-fit: cover;
 }
 
+/* Estilo para imagens dos cards */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .carousel-item img {
@@ -48,5 +56,9 @@ footer {
     
     h1 {
         font-size: 1.8rem;
+    }
+    
+    .card-img-top {
+        height: 150px;
     }
 }
