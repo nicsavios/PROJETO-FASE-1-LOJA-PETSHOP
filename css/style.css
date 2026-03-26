@@ -62,3 +62,88 @@ h2, h3 {
         height: 150px;
     }
 }
+
+/* Estilos customizados para o PetShop Amigo Fiel */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Cards com efeito hover */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Estilo para mensagem temporal */
+#mensagemHorario {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Formulários */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: scale(1.02);
+}
+
+.btn-secondary {
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    transform: scale(1.02);
+}
+
+/* Radio buttons e checkboxes */
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .display-5 {
+        font-size: 1.8rem;
+    }
+    
+    .btn-lg {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
