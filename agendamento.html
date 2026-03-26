@@ -35,79 +35,86 @@
 <main class="container my-5">
     <h2 class="text-center mb-4">Agendamento de Serviços</h2>
     
-    <form id="formAgendamento" class="row g-3">
-        <!-- Escolha do Serviço -->
-        <h3 class="text-primary">Escolha o Serviço</h3>
-        
-        <div class="col-md-6">
-            <label class="form-label">Serviço *</label><br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="servico" id="banho" value="Banho" required>
-                <label class="form-check-label" for="banho">Banho - R$ 40,00</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="servico" id="tosa" value="Tosa">
-                <label class="form-check-label" for="tosa">Tosa - R$ 60,00</label>
-            </div>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="img/agendamento.jpg" class="img-fluid rounded mb-4" alt="Calendário com caneta e relógio representando agendamento de serviços">
         </div>
-        
-        <!-- Método de Agendamento -->
-        <h3 class="text-primary mt-4">Método de Agendamento</h3>
-        
-        <div class="col-md-6">
-            <label class="form-label">Como deseja realizar o serviço? *</label><br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="metodo" id="teleBusca" value="Tele-busca" required>
-                <label class="form-check-label" for="teleBusca">Tele-busca (buscamos no local)</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="metodo" id="entregaLocal" value="Entrega no Local">
-                <label class="form-check-label" for="entregaLocal">Entrega no Local (você traz o pet)</label>
-            </div>
+        <div class="col-md-8">
+            <form id="formAgendamento" class="row g-3">
+                <!-- Escolha do Serviço -->
+                <h3 class="text-primary">Escolha o Serviço</h3>
+                
+                <div class="col-md-6">
+                    <label class="form-label">Serviço *</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="servico" id="banho" value="Banho" required>
+                        <label class="form-check-label" for="banho">Banho - R$ 40,00</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="servico" id="tosa" value="Tosa">
+                        <label class="form-check-label" for="tosa">Tosa - R$ 60,00</label>
+                    </div>
+                </div>
+                
+                <!-- Método de Agendamento -->
+                <h3 class="text-primary mt-4">Método de Agendamento</h3>
+                
+                <div class="col-md-6">
+                    <label class="form-label">Como deseja realizar o serviço? *</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="metodo" id="teleBusca" value="Tele-busca" required>
+                        <label class="form-check-label" for="teleBusca">Tele-busca (buscamos no local)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="metodo" id="entregaLocal" value="Entrega no Local">
+                        <label class="form-check-label" for="entregaLocal">Entrega no Local (você traz o pet)</label>
+                    </div>
+                </div>
+                
+                <!-- Data e Horário com Calendário -->
+                <h3 class="text-primary mt-4">Data e Horário</h3>
+                
+                <div class="col-md-6">
+                    <label for="dataAgendamento" class="form-label">Data *</label>
+                    <input type="date" class="form-control" id="dataAgendamento" required>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="horaAgendamento" class="form-label">Horário *</label>
+                    <input type="time" class="form-control" id="horaAgendamento" required>
+                </div>
+                
+                <!-- Dados do Pet para Agendamento -->
+                <h3 class="text-primary mt-4">Informações do Pet</h3>
+                
+                <div class="col-md-6">
+                    <label for="nomePetAgendamento" class="form-label">Nome do Pet *</label>
+                    <input type="text" class="form-control" id="nomePetAgendamento" placeholder="Nome do seu animal" required>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="racaPetAgendamento" class="form-label">Raça</label>
+                    <input type="text" class="form-control" id="racaPetAgendamento" placeholder="Ex: Labrador">
+                </div>
+                
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="confirmacaoAgendamento" required>
+                        <label class="form-check-label" for="confirmacaoAgendamento">
+                            Confirmo que as informações estão corretas e concordo com os termos de agendamento *
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                </div>
+            </form>
+            
+            <div id="mensagemAgendamento" class="alert alert-success mt-3 d-none"></div>
         </div>
-        
-        <!-- Data e Horário com Calendário -->
-        <h3 class="text-primary mt-4">Data e Horário</h3>
-        
-        <div class="col-md-6">
-            <label for="dataAgendamento" class="form-label">Data *</label>
-            <input type="date" class="form-control" id="dataAgendamento" required>
-        </div>
-        
-        <div class="col-md-6">
-            <label for="horaAgendamento" class="form-label">Horário *</label>
-            <input type="time" class="form-control" id="horaAgendamento" required>
-        </div>
-        
-        <!-- Dados do Pet para Agendamento -->
-        <h3 class="text-primary mt-4">Informações do Pet</h3>
-        
-        <div class="col-md-6">
-            <label for="nomePetAgendamento" class="form-label">Nome do Pet *</label>
-            <input type="text" class="form-control" id="nomePetAgendamento" placeholder="Nome do seu animal" required>
-        </div>
-        
-        <div class="col-md-6">
-            <label for="racaPetAgendamento" class="form-label">Raça</label>
-            <input type="text" class="form-control" id="racaPetAgendamento" placeholder="Ex: Labrador">
-        </div>
-        
-        <div class="col-12">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="confirmacaoAgendamento" required>
-                <label class="form-check-label" for="confirmacaoAgendamento">
-                    Confirmo que as informações estão corretas e concordo com os termos de agendamento *
-                </label>
-            </div>
-        </div>
-        
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
-            <button type="reset" class="btn btn-secondary">Limpar</button>
-        </div>
-    </form>
-    
-    <div id="mensagemAgendamento" class="alert alert-success mt-3 d-none"></div>
+    </div>
 </main>
 
 <footer class="bg-dark text-white text-center py-3 mt-5">
