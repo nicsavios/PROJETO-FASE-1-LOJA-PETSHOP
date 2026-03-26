@@ -1,65 +1,119 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Produtos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - PetShop Amigo Fiel</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header>
-
-<h1>PetShop Amigo Fiel</h1>
-
-<nav>
-<a href="index.html">Home</a> |
-<a href="produtos.html">Produtos</a> |
-<a href="servicos.html">Serviços</a> |
-<a href="contato.html">Contato</a>
-</nav>
-
-<hr>
-
+<header class="bg-primary text-white py-3">
+    <div class="container">
+        <h1 class="text-center">PetShop Amigo Fiel</h1>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="cadastro.html">Cadastro</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="agendamento.html">Agendamento</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
 
-<h2>Rações</h2>
+<main class="container my-5">
+    <h2 class="text-center mb-4">Nossos Produtos</h2>
+    
+    <h3 class="text-primary">Rações</h3>
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pacote de ração premium para cães, contém ingredientes naturais e nutrientes">
+                <div class="card-body">
+                    <h5 class="card-title">Ração Premium para Cães</h5>
+                    <p class="card-text">Alimento completo e balanceado para cães adultos.</p>
+                    <p class="fw-bold">Valor: R$ 120,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pacote de ração específica para gatos, sabor frango">
+                <div class="card-body">
+                    <h5 class="card-title">Ração para Gatos</h5>
+                    <p class="card-text">Alimento saboroso e nutritivo para gatos adultos.</p>
+                    <p class="fw-bold">Valor: R$ 95,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <h3 class="text-primary">Brinquedos</h3>
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Bola de borracha resistente para cães brincarem e mastigarem">
+                <div class="card-body">
+                    <h5 class="card-title">Bola para Cães</h5>
+                    <p class="card-text">Bola resistente para diversão e exercícios.</p>
+                    <p class="fw-bold">Valor: R$ 25,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Arranhador de sisal para gatos, ajuda a afiar as unhas e evita danos aos móveis">
+                <div class="card-body">
+                    <h5 class="card-title">Arranhador para Gatos</h5>
+                    <p class="card-text">Arranhador vertical para entretenimento dos felinos.</p>
+                    <p class="fw-bold">Valor: R$ 80,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <h3 class="text-primary">Acessórios</h3>
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Coleira ajustável em nylon com presilha de metal para cães de médio porte">
+                <div class="card-body">
+                    <h5 class="card-title">Coleira Ajustável</h5>
+                    <p class="card-text">Coleira resistente com ajuste de tamanho.</p>
+                    <p class="fw-bold">Valor: R$ 35,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Cama acolchoada para pets, confortável e fácil de limpar">
+                <div class="card-body">
+                    <h5 class="card-title">Cama para Pets</h5>
+                    <p class="card-text">Cama macia e confortável para descanso do pet.</p>
+                    <p class="fw-bold">Valor: R$ 150,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
-<img src="https://via.placeholder.com/150">
-<p>Ração Premium para Cães</p>
-<p>Valor: R$120,00</p>
-
-<img src="https://via.placeholder.com/150">
-<p>Ração para Gatos</p>
-<p>Valor: R$95,00</p>
-
-<h2>Brinquedos</h2>
-
-<img src="https://via.placeholder.com/150">
-<p>Bola para Cães</p>
-<p>Valor: R$25,00</p>
-
-<img src="https://via.placeholder.com/150">
-<p>Arranhador para Gatos</p>
-<p>Valor: R$80,00</p>
-
-<h2>Acessórios</h2>
-
-<img src="https://via.placeholder.com/150">
-<p>Coleira Ajustável</p>
-<p>Valor: R$35,00</p>
-
-<img src="https://via.placeholder.com/150">
-<p>Cama para Pets</p>
-<p>Valor: R$150,00</p>
-
-<footer>
-
-<hr>
-
-<p>Autor: Nicolas Savio</p>
-
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>Autor: Nicolas Savio</p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
